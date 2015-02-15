@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum of 3 Numbers", "Sum of 3 Numbers\Sum of 3 Numbers.csproj", "{62335AF7-FB6E-4D1F-81F0-B0E51459E4CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Print Company Information", "Print Company Information\Print Company Information.csproj", "{B8C82A13-4409-458F-A030-B6150608E671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CirclePerimeterandArea", "CirclePerimeterandArea\CirclePerimeterandArea.csproj", "{D060E612-B7DE-40C0-9F3E-926B286823D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberComparer", "NumberComparer\NumberComparer.csproj", "{514256BE-ED6D-4DA5-8A76-BD168FF0F64D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62335AF7-FB6E-4D1F-81F0-B0E51459E4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62335AF7-FB6E-4D1F-81F0-B0E51459E4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62335AF7-FB6E-4D1F-81F0-B0E51459E4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62335AF7-FB6E-4D1F-81F0-B0E51459E4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C82A13-4409-458F-A030-B6150608E671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C82A13-4409-458F-A030-B6150608E671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C82A13-4409-458F-A030-B6150608E671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C82A13-4409-458F-A030-B6150608E671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D060E612-B7DE-40C0-9F3E-926B286823D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D060E612-B7DE-40C0-9F3E-926B286823D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D060E612-B7DE-40C0-9F3E-926B286823D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D060E612-B7DE-40C0-9F3E-926B286823D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{514256BE-ED6D-4DA5-8A76-BD168FF0F64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514256BE-ED6D-4DA5-8A76-BD168FF0F64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514256BE-ED6D-4DA5-8A76-BD168FF0F64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514256BE-ED6D-4DA5-8A76-BD168FF0F64D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
