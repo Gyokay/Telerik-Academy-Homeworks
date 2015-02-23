@@ -1,2 +1,1 @@
 # Telerik-Homeworks
-Telerik Homeworks
