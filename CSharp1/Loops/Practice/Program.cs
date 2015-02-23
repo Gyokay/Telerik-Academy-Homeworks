@@ -8,15 +8,15 @@ namespace Practice
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("number=");
-            int number = int.Parse(Console.ReadLine());
+            
+            int min = 0;
+            int max = 0;
+            int sum = 0;
+            int avg = 0;
 
-            for (int i = 0; i < number; i++)
-            {
-                
-            }
+
         }
     }
 }
