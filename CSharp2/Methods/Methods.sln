@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2. Get largest numb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3. English digit", "Problem 3. English digit\Problem 3. English digit.csproj", "{612C6F56-D351-4C28-964C-29A06F7296F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 4. Appearance count", "Problem 4. Appearance count\Problem 4. Appearance count.csproj", "{5D96A94D-8673-498F-9271-F8EA9891FB8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{612C6F56-D351-4C28-964C-29A06F7296F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{612C6F56-D351-4C28-964C-29A06F7296F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{612C6F56-D351-4C28-964C-29A06F7296F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D96A94D-8673-498F-9271-F8EA9891FB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D96A94D-8673-498F-9271-F8EA9891FB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D96A94D-8673-498F-9271-F8EA9891FB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D96A94D-8673-498F-9271-F8EA9891FB8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
