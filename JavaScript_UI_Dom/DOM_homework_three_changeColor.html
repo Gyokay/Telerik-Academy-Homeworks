@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		textarea {
+			font-size: 30px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<textarea id="textarea" cols="30" rows="10" >
+
+	</textarea>
+	<input id="textColor" type="color" value="#0F65D9">Changes the color of the text.</imput>
+	<input id="areaColor" type="color" value="#0F65D9">Changes the backgroud color of the text area.</imput>
+
+	<script>
+		var inputEl = document.getElementById('textColor');
+		var areaBg = document.getElementById('areaColor');
+		
+		inputEl.addEventListener('input', function() {
+			var value = inputEl.value;
+			document.getElementById('textarea').style.color = value;
+			//console.log(value);
+		});
+
+		areaBg.addEventListener('input', function() {
+			var value = areaBg.value;
+			document.getElementById('textarea').style.backgroundColor = value;
+			document.getElementsByTagName('body')[0].style.backgroundColor = value;
+			//console.log(value);
+		});
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title of the document</title>
+	<style>
+		/*div {
+			border: solid;
+		}*/
+	</style>
+</head>
+
+<body>
+<button>Click me!</button>
+
+
+	<script>
+
+		var rndNumber = randomNumberGenerator(20, 101),
+		nextRndNumber = randomNumberGenerator(20, 101),
+		rndBorderWidth = randomNumberGenerator(1, 21).toString() + 'px',
+		rndBorder = rndNumber.toString() + 'px',
+		xPos = randomNumberGenerator(0, 1000),
+		yPos = randomNumberGenerator(0, 1000),
+		color = rndColor(),
+		fontColor = rndFontColor(),
+		width = rndNumber.toString() + 'px',
+		height = nextRndNumber.toString() + 'px';
+
+
+		function createDiv() {
+			var div = document.createElement('div'),
+			strong = document.createElement('strong');
+			strong.innerHTML = 'div';
+
+			div.style.width = width;
+			div.style.height = height;
+			div.style.backgroundColor = color;
+			div.style.borderRadius = rndBorder;
+			div.style.border = 'solid';
+			div.style.borderColor = fontColor;
+			div.style.borderWidth = rndBorderWidth;
+			div.style.position = 'absolute';
+			div.style.left = xPos + 'px';
+			div.style.top = yPos + 'px';
+			strong.style.color = fontColor; 
+			div.appendChild(strong);
+
+			document.body.appendChild(div);
+
+		}
+
+		function randomNumberGenerator(min, max) {
+			return Math.floor(Math.random() * (max - min) + min);
+		}
+
+		function rndColor() {
+			var color = '#',
+			letters = '0123456789ABCDEF'.split('');
+
+			for (var i = 0; i < 6; i += 1) {
+				color += letters[Math.round(Math.random() * 15)];
+			}
+			return color;
+		}
+
+		function rndFontColor() {
+			var color = '#',
+			letters = '0123456789ABCDEF'.split('');
+
+			for (var i = 0; i < 6; i += 1) {
+				color += letters[Math.round(Math.random() * 15)];
+			}
+			return color;
+		}
+
+		document.getElementsByTagName('button')[0].addEventListener('click', function() {
+
+			 location.reload();
+		});
+		
+
+		createDiv();
+		
+	</script>
+</body>
+
+</html>

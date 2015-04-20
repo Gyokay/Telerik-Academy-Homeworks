@@ -1,0 +1,33 @@
+table, th, tr, td{
+	border:1px solid black;
+	border-collapse: collapse;
+	height: 40px;
+	padding-left: 10px
+}
+
+table{
+	width:100%;
+	vertical-align: middle;
+}
+
+th, td{
+	vertical-align: middle;
+	text-align: left;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 800;
+}
+
+th{
+	background-color: #85DB18;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+}
+
+tr:nth-child(even) {
+   background-color: #CDE855;
+}
+
+tr:nth-child(odd) {
+   background-color: #F5F6D4;
+}

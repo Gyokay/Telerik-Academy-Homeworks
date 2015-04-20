@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div {
+			width: 300px;
+			padding: 5px;
+			border: solid gray;
+		}
+	</style>
+
+</head>
+
+<body>
+	
+	<div id="tagContainer"></div>
+
+	<script>
+		
+		var tags = ["cms", "javascript", "js", "ASP.NET MVC", 
+		".net", ".net", "css", "wordpress", "xaml", "js", "http", "web", "asp.net", "asp.net MVC", "ASP.NET MVC", 
+		"wp", "javascript", "js", "cms", "html", "javascript", "http", "http", "CMS"];
+
+		var result = count(tags);
+		var container = document.getElementById('tagContainer');
+		
+		generateTagClowd(result, container);
+
+
+
+		function generateTagClowd(result, container) {
+
+			var tagFragment = document.createDocumentFragment();
+			var strong;
+
+			for(var i = 0; i < result[0].length; i += 1){
+
+				strong = createElement(i);
+				strong.style.fontSize = result[1][i].toString() + 'em';	
+				//strong.style.color = '#F2836B';
+				tagFragment.appendChild(strong);
+			}
+			container.appendChild(tagFragment);
+		}
+
+		function createElement(i) {
+			var strong = document.createElement('strong');
+			strong.innerHTML = result[0][i] + '	';
+			return strong;
+		}
+
+		function count(tags) {
+
+			var a = [], b = [], prev;
+
+			tags.sort();
+
+			for(var i = 0; i < tags.length; i += 1) {
+				if(tags[i] !== prev) {
+					a.push(tags[i]);
+					b.push(1);
+				}
+				else {
+					b[b.length - 1] += 1;
+				}
+				prev = tags[i];
+			}
+
+			return [a, b];
+		}
+
+	</script>
+</body>
+
+</html>

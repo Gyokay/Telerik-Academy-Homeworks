@@ -11,11 +11,11 @@ namespace Problem_2.Random_numbers
         static void Main(string[] args)
         {
             var randomNumber = new Random();
-            int counter = 10;
+            int counter = 6;
             
             while (counter > 0)
             {
-                Console.WriteLine(randomNumber.Next(100, 200));
+                Console.WriteLine(randomNumber.Next(1, 49));
                 counter--;
             }
             
