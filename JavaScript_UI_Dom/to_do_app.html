@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Do List App</title>
+	<style>
+		.container {
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		table {
+			border: solid gray;
+			border-width: 2px;
+			float: left;
+		}
+
+		form {
+			float: right;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2">To do!</th>
+				</tr>
+			</thead>
+			<tbody id="tableBody">
+				
+			</tbody>
+		</table>
+
+		<form id="sbmt">
+			<p>
+				<label>
+					Add task: <input id="taskInput" type="text">
+					<button id="btnSubmit" value="asdf" type="button">add</button>
+				</label>
+			</p>
+		</form>
+	</div>
+	<script>
+		
+		var submitBtn = document.getElementById('btnSubmit');
+		submitBtn.addEventListener('click', addTask);
+		var tableBody = document.getElementById('tableBody');
+
+		tableBody.addEventListener('click', deleteTask);
+
+		function deleteTask(e) {
+			if (e.target.tagName === 'BUTTON') {
+				var tr = e.target.parentNode.parentNode;
+				tr.parentNode.removeChild(tr);
+			}
+			return;
+		}
+
+		function addTask() {
+			
+			var inpt = document.getElementById('taskInput');
+			var vlue = inpt.value;
+			
+			if(vlue === '') {
+				alert('Enter task first!');
+				return;
+			}	
+
+			var tableBody = document.getElementById('tableBody');
+			var raw = document.createElement('tr');
+			var taskCell = document.createElement('td');
+			var btnCell = document.createElement('td')
+			var delBtn = document.createElement('button');
+			delBtn.innerHTML = 'delete';
+			btnCell.appendChild(delBtn);
+			taskCell.innerHTML = vlue;
+			raw.appendChild(taskCell);
+			raw.appendChild(btnCell);
+			tableBody.appendChild(raw);
+		}
+
+	</script>
+</body>	
+</html>
