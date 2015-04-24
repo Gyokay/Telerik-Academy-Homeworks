@@ -4,17 +4,27 @@
 	<meta charset="UTF-8">
 	<title>To Do List App</title>
 	<style>
+		body {
+			font-size: 40px;
+		}
 		.container {
 			width: 1000px;
 			margin: 0 auto;
 		}
 
 		table {
+			width: 500px;
 			border: solid gray;
 			border-width: 2px;
 			float: left;
+			padding: 5px;
 		}
 
+		thead {
+			color: white;
+			background-color: gray;
+		}
+		
 		form {
 			float: right;
 		}
@@ -74,7 +84,7 @@
 			var taskCell = document.createElement('td');
 			var btnCell = document.createElement('td')
 			var delBtn = document.createElement('button');
-			delBtn.innerHTML = 'delete';
+			delBtn.innerHTML = 'done';
 			btnCell.appendChild(delBtn);
 			taskCell.innerHTML = vlue;
 			raw.appendChild(taskCell);

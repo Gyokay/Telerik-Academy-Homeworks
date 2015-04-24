@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		.container {
+			width: 400px;
+			height: 600px;
+			margin: 0 auto;
+		}
+
+		.slide {
+			display: none;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="slide_one" class="slide displayed">
+			<p>
+				1. Create a slider control using jQuery <br>
+				* The slider can have many slides <br>
+				* Only one slide is visible at a time <br>
+				* Each slide contains HTML code <br>
+				* i.e. it can contain images, forms, divs, headers, links, etc… <br>
+				* Implement functionality for changing the visible slide after 5 seconds <br>
+				* Create buttons for next and previous slide <br>
+			</p>
+		</div>
+		<div id="slide_two" class="slide">
+			<img src="http://i0.kym-cdn.com/photos/images/facebook/000/581/168/9f1.jpg" alt="">
+		</div>
+		<div id="slide_three" class="slide">
+			<img src="http://static.fjcdn.com/pictures/Nerdgasm+i+m+not+saying+she+isn+t+just+a+hot+chick_571f34_4266097.jpg" alt="">
+		</div>
+	</div>
+	<input id="slider" type="range" min="1" max="3" step="1" value="1">
+	<button id="btn_prev">previous</button>
+	<button id="btn_next">next</button>
+	<button id="stp_slideshow">stop slideshow</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+
+		var sldrVal = $('#slider').val();
+		$(document.body).ready(function () {
+			if (sldrVal === '1') {
+				$('#slide_one').show();
+			}
+		}); 
+
+		$('#slider').on('change', sliderChange);
+
+		function sliderChange() {
+			if ($('#slider').val() === '1') {
+				$('.displayed').toggleClass('displayed').fadeOut(1000, function () {
+					$('#slide_one').toggleClass('displayed').fadeIn(1000);
+				});
+			}
+			else if ($('#slider').val() === '2') {
+				$('.displayed').toggleClass('displayed').fadeOut(1000, function () {
+					$('#slide_two').toggleClass('displayed').fadeIn(1000);
+				});
+			}
+			else if ($('#slider').val() === '3') {
+				$('.displayed').toggleClass('displayed').fadeOut(1000, function () {
+					$('#slide_three').toggleClass('displayed').fadeIn(1000);
+				});
+				
+			}
+		}			
+
+		$('#btn_next').on('click', nextSlide);
+
+		function nextSlide() {
+			if ($('#slider').val() === '1') {
+				$('#slider').val('2');
+				sliderChange();
+			}
+			else if ($('#slider').val() === '2') {
+				$('#slider').val('3');
+				sliderChange();
+			}
+			else if ($('#slider').val() === '3') {
+				$('#slider').val('1');
+				sliderChange();
+			}
+			else {
+				return;
+			}	
+		}
+
+		$('#btn_prev').on('click', function () {
+			if ($('#slider').val() === '1') {
+				$('#slider').val('3');
+				sliderChange();
+			}
+			else if ($('#slider').val() === '2') {
+				$('#slider').val('1');
+				sliderChange();
+			}
+			else if ($('#slider').val() === '3') {
+				$('#slider').val('2');
+				sliderChange();
+			}
+			else {
+				return;
+			}
+		});
+		
+		var itrvl = setInterval(function () {
+			nextSlide();
+		}, 5000);
+
+		function clrItrvl() {
+			clearInterval(itrvl);
+		}
+
+		$('#stp_slideshow').on('click', clrItrvl);
+	</script>
+</body>
+</html>

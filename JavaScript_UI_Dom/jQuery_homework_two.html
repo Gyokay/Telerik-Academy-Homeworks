@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+	<div id="top-div"></div>
+	<div id="middle-div">
+		<p>
+		Using jQuery implement functionality to insert a
+		DOM element before or after another element
+		</p>
+	</div>
+	<div id="bottom-div"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script> 
+		 var el = $('#middle-div');
+
+		appendBefore(el, $('<div />').html('Apended Before' + ' ' + $('#middle-div').attr('id')));
+		appendAfter(el, $('<div />').html('Appended After' + ' ' + $('#middle-div').attr('id')));
+
+		function appendBefore(element, newElement) {
+			element.before(newElement);
+		}
+
+		function appendAfter(element, newElement) {
+			element.after(newElement);
+		}
+	</script>
+</body>
+</html>
