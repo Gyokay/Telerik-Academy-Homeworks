@@ -1,0 +1,40 @@
+body {
+	background-color: #595959;
+}
+
+th, td {
+	padding: 10px;
+}
+
+div {
+	margin-right: 5px;
+	float: left;
+}
+
+.italic {
+	font-style: italic;
+	color: white;
+}
+
+#circle {
+	background-color: #71B47A;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px; 
+}
+
+.yellow {
+	color: #FFF6B6;
+}
+
+.red {
+	color: red;
+}
+
+.gray {
+	color: #BABCBD;
+}
+
+.orange {
+	color: #DC6B1E;
+}

@@ -1,0 +1,59 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	margin-top: 8px;
+	margin-bottom: 13px;
+	font-size: 13px;
+	padding: 8px;
+	display: inline-block;
+	color: #82A9A7;
+	background-color: #4A5F66; 
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+section {
+	width: 235px;
+	float: left;
+}
+
+.container {
+	border-radius: 4px;
+	width: 612px;
+	height: 326px;
+	background-color: #1F3A42;
+}
+
+.selected {
+	color: white;
+	background-color: #1F3A42; 
+}
+
+section ul li {
+	font-size: 14px;
+	color: #82A9A7;
+	padding: 5px;
+	background-color: #1F3A42;
+}
+
+header {
+	font-size: 14px;
+	padding: 9px;
+	color: white;
+	background-color: #00938A;
+}
+
+hr {
+	border-color: #3A5057;
+}
+
+.underline {
+	text-decoration: underline;
+}

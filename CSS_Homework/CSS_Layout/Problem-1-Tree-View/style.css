@@ -1,0 +1,16 @@
+ul li {
+	list-style: none;
+}
+
+.outer span:hover {
+	text-decoration: underline;
+}
+
+.inner {
+	color: lightgray;
+	display: none;
+}
+
+.outer:hover .inner {
+	display: block;
+}

@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Edwardian Script ITC";
+	src: url(Edwardian_Script_ITC.ttf);
+}
+
+body {
+	padding: 10px;
+}
+
+p {
+	font-family: Consolas, monaco, monospace;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: #0094ff;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 20px;
+	font-family: Consolas, monaco, monospace;
+	color: #0094ff;
+}
+
+#diffFont {
+	font-size: 50px;
+	font-family: "Edwardian Script ITC";
+	color: #0094ff;
+}

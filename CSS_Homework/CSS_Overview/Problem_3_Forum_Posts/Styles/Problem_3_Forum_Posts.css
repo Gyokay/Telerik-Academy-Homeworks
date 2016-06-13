@@ -1,0 +1,43 @@
+body {
+	background-color: #A9A9A9;
+	padding: 20px;
+}
+
+ul, ul a {
+	color: white;
+	list-style: none;
+	text-decoration: none;
+}
+
+nav {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#bg {
+	background-color: #D3D3D3;
+}
+
+#line {
+	text-decoration: underline;
+}
+
+.title {
+	color:#FAFAD2;
+}
+
+.center {
+	text-align: center;
+}
+
+.small {
+	font-size: 14px;
+}
+
+.big {
+	font-size: 50px;
+}

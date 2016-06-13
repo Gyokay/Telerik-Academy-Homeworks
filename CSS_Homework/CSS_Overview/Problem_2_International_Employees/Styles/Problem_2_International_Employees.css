@@ -1,0 +1,40 @@
+tbody tr:nth-child(odd) {
+   background-color: #ECECD8;
+}
+
+th, td {
+	text-align: left;
+	padding: 10px;
+	border-right: 1px solid #C0BEA4;
+}
+
+table {
+	border: none;
+	border-collapse: collapse;
+}
+
+table td {
+	border-left: 1px solid #C0BEA4;
+	border-right: 1px solid #C0BEA4;
+}
+
+table td:first-child {
+	border-left: none;
+}
+
+table td:last-child {
+	border-right: none;
+}
+
+span {
+	margin-right: 10px;
+}
+
+#gradient {
+	color: white;
+    background: #bfd255; /* Old browsers */
+    background: -moz-linear-gradient(top, #bfd255 0%, #72aa00 87%, #9ecb2d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #bfd255 0%,#72aa00 87%,#9ecb2d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #bfd255 0%,#72aa00 87%,#9ecb2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+}
