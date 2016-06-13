@@ -1,0 +1,44 @@
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+input, textarea {
+	width: 90%;
+}
+
+#zipCode {
+	width: 20%;
+}
+
+#phoneNum > input, #birthDate > input {
+	width: 20%;
+}
+
+div > input {
+	/*white-space: nowrap;*/
+	width: 5%;
+}
+
+#buttons {
+	background-color: #ccfff7;
+}
+
+#buttons > td {
+	text-align: center;
+}
+
+td > label {
+	display: block;
+	text-align: right;
+}
+
+#birthDate > label {
+	display: inline;
+	text-align: left;
+}
