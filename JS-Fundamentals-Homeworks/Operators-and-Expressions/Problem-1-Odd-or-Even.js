@@ -1,11 +1,9 @@
-function foo () {
-    var num = 8;
-    if (num % 2 === 0) {
-        console.log('even');
-    } else {
-        console.log('odd');
-    }
+function solve(params) {
+	var n = parseInt(params[0]);
+
+	if (n % 2 === 0) { 
+		console.log("even " + n);
+	} else {
+		console.log("odd " + n);
+	}
 }
-
-foo();
-
