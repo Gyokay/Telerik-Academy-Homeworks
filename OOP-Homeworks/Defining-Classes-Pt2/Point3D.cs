@@ -1,7 +1,5 @@
 ﻿namespace Defining_Classes_Pt2
 {
-    using System;
-
     public struct Point3D
     {
         private static readonly Point3D o = new Point3D(0, 0, 0);

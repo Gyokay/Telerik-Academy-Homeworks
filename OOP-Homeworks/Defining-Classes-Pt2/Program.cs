@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Defining_Classes_Pt2
+﻿namespace Defining_Classes_Pt2
 {
+    using System;
+
     class Program
     {
         static void Main(string[] args)

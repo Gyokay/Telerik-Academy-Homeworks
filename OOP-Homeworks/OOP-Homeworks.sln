@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defining-Classes", "Definin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defining-Classes-Pt2", "Defining-Classes-Pt2\Defining-Classes-Pt2.csproj", "{336DA74D-E273-482C-80E8-3D1CE8650E83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Extension-Methods-Delegates-Lambda-LINQ", "03.Extension-Methods-Delegates-Lambda-LINQ\03.Extension-Methods-Delegates-Lambda-LINQ.csproj", "{30633753-BBB0-4FE9-9522-CA26A538B833}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{336DA74D-E273-482C-80E8-3D1CE8650E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{336DA74D-E273-482C-80E8-3D1CE8650E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{336DA74D-E273-482C-80E8-3D1CE8650E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30633753-BBB0-4FE9-9522-CA26A538B833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30633753-BBB0-4FE9-9522-CA26A538B833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30633753-BBB0-4FE9-9522-CA26A538B833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30633753-BBB0-4FE9-9522-CA26A538B833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
