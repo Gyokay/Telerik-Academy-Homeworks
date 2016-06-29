@@ -1,7 +1,7 @@
 function solve(args) {
     'use strict';
 
-    let str = args[0];
+        let str = args[0];
 
     let output = '';
 
