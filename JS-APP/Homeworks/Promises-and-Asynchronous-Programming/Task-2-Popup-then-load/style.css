@@ -1,0 +1,9 @@
+body {
+  font-size: 3em;
+  text-align: center;
+}
+
+#redirect-window {
+  color: limegreen;
+  display: inline-block;
+}
